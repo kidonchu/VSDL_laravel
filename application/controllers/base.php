@@ -1,7 +1,8 @@
 <?php
 
-class Base_Controller extends Controller {
-
+class Base_Controller extends Controller 
+{
+	public $restful = true;
 	/**
 	 * Catch-all method for requests that can't be matched.
 	 *

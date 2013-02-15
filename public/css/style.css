@@ -1,0 +1,46 @@
+/* -----------------------------------*/
+/* ---------->>> Reset <<<------------*/
+/* -----------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+table {border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+/*ol,ul {list-style:none;}*/
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+abbr,acronym { border:0;}
+a {text-decoration: none; outline: none;}
+ol, ul, li {border: 0;}
+
+/* -----------------------------------*/
+/* ---------->>> GLOBAL <<<-----------*/
+/* -----------------------------------*/
+body {color: #222; font: 13px/18px "Arial", Helvetica, sans-serif;}
+textarea {height: 300px; margin: 10px 0; padding: 10px; width: 100%;}
+a:hover {text-decoration: underline;}
+ul, ol {margin-left: 25px; margin-top: -20px;}
+ul li, ol li {line-height: 0em;}
+p {margin: -5px 0;}
+/* -----------------------------------*/
+/* ---------->>> Structure <<<--------*/
+/* -----------------------------------*/
+#wrapper {margin: 0 auto 20px; padding-bottom: 50px; width: 90%;}
+header {margin: 20px 0;}
+header h1 {font-size: 40px; line-height: 80px;}
+/* --------------------------------------*/
+/* --------->>> Form elements <<<--------*/
+/* --------------------------------------*/
+input.is {margin: 5px 0; width: 80px;}
+/* --------------------------------------*/
+/* -------->>> Table elements <<<--------*/
+/* --------------------------------------*/
+table.dataTable td.date {width: 70px;}
+table.dataTable td.cat, table.dataTable td.edit, table.dataTable td.delete {width: 10px;}
+table.dataTable td.note {white-space: pre-wrap; /* css-3 */ white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ white-space: -pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7 */ word-wrap: break-word; /* Internet Explorer 5.5+ */}
+/* --------------------------------------*/
+/* -------->>> Other elements <<<--------*/
+/* --------------------------------------*/
+a.bttn {background-color: #EEE; border: 1px solid #888; border-radius: 5px; color: #222; cursor: pointer; display: block; padding: 5px 10px; text-align: center; text-decoration: none; width: 80px;}
+a.bttn:hover {background-color: #FAFFC7;}
+.dataTables_wrapper {margin-top: 20px;}
+div.cat {margin-bottom: 10px;}

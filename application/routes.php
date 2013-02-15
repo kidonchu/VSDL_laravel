@@ -32,11 +32,22 @@
 |
 */
 
+Route::controller('notes');
 Route::get('/', function()
 {
-	return View::make('home.index');
+	return Redirect::to('notes');
 });
 
+Route::get('test', function(){
+	$note = new Note;
+
+	$note->category = 'testing';
+	$note->note = 'LOGGIN TEST';
+
+	$note->save();
+
+	return "Note is added";
+});
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
@@ -92,9 +103,26 @@ Event::listen('500', function()
 
 Route::filter('before', function()
 {
-	// Do stuff before every request to your application...
+	Asset::add('jquery', 'js/jquery-1.9.1.min.js');
+	Asset::add('tiny_mce', 'js/tiny_mce/tiny_mce.js');
+	Asset::add('dataTables', 'js/DataTables-1.9.4/jquery.dataTables.js');
+	Asset::add('XRegExp', 'js/SyntaxHighlighter/scripts/XRegExp.js');
+	Asset::add('shCore', 'js/SyntaxHighlighter/scripts/shCore.js');
+	Asset::add('shBrushJScript', 'js/SyntaxHighlighter/scripts/shBrushJScript.js');
+	Asset::add('shBrushPhp', 'js/SyntaxHighlighter/scripts/shBrushPhp.js');
+	Asset::add('shBrushBash', 'js/SyntaxHighlighter/scripts/shBrushBash.js');
+	Asset::add('shBrushCss', 'js/SyntaxHighlighter/scripts/shBrushCss.js');
+	Asset::add('shBrushSql', 'js/SyntaxHighlighter/scripts/shBrushSql.js');
+	Asset::add('shBrushPlain', 'js/SyntaxHighlighter/scripts/shBrushPlain.js');
+
+	Asset::add('style', 'css/style.css');
+	Asset::add('shCore', 'js/SyntaxHighlighter/styles/shCore.css');
+	Asset::add('shThemeDefault', 'js/SyntaxHighlighter/styles/shThemeDefault.css');
+	Asset::add('dataTables', 'css/DataTables-1.9.4/jquery.dataTables.css');
 });
 
+
+		
 Route::filter('after', function($response)
 {
 	// Do stuff after every request to your application...

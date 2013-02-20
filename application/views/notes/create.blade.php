@@ -14,8 +14,8 @@ New Note
 	</div>
 	{{ Form::label('note', "Note")}}
 	{{ Form::textarea('note') }}
-	<input type='submit' name='create' value='Create' />
-	<input type='submit' name='cancel' value='Cancel' />
+	<input type='submit' class='is' name='create' value='Create' />
+	<input type='submit' class='is' name='cancel' value='Cancel' />
 {{ Form::close() }}
 @endsection
 

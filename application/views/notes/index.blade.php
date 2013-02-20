@@ -38,14 +38,11 @@ Home
 
 @section('script')
 <script>
-    var display_length = 5;
     var tableOption = {
         "sPaginationType": "full_numbers",
         "aaSorting": [[0, "desc"]],
-        "iDisplayLength": display_length,
-        "aLengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
-        "iDisplayStart": ( Math.abs({{ count($notes) }} - display_length) ) // Show most recent records
-        // abs function is needed when # of logs are less than 10 (no negative number allowed)
+        "iDisplayLength": 5,
+        "aLengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
     };
     
     $(".dataTable").dataTable(tableOption);

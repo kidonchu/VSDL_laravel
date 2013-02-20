@@ -5,10 +5,10 @@ Home
 @endsection
 
 @section('content')
+<div>
+	{{ HTML::link('notes/create', 'Add New', array('class' => 'bttn'))}}
+</div>
 @if ($notes)
-	<div>
-		{{ HTML::link('notes/create', 'Add New', array('class' => 'bttn'))}}
-	</div>
 	<table class="dataTable">
 		<thead>
 			<tr>

@@ -18,7 +18,7 @@ ol, ul, li {border: 0;}
 body {color: #222; font: 13px/18px "Arial", Helvetica, sans-serif;}
 textarea {height: 300px; margin: 10px 0; padding: 10px; width: 100%;}
 a:hover {text-decoration: underline;}
-ul, ol {margin-left: 25px; margin-top: -20px;}
+ul, ol {margin-left: 25px; margin-top: -20px; margin-bottom: -20px;}
 ul li, ol li {line-height: 0em;}
 p {margin: -5px 0;}
 /* -----------------------------------*/
